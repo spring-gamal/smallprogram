@@ -2,7 +2,8 @@ package com.gamal.project.small.program.service;
 
 import java.util.List;
 
-import com.purcotton.middleware.base.commons.CommonPage;
+import com.gamal.project.small.program.commons.CommonPage;
+
 
 public interface BaseService<T, Q>
 {

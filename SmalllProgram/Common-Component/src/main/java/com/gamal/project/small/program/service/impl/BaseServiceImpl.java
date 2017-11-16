@@ -6,14 +6,14 @@ import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.gamal.project.small.program.bean.BaseBean;
+import com.gamal.project.small.program.commons.CommonPage;
+import com.gamal.project.small.program.commons.SystemErrorCode;
+import com.gamal.project.small.program.mapper.BaseMapper;
+import com.gamal.project.small.program.query.BaseQuery;
+import com.gamal.project.small.program.service.BaseService;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
-import com.purcotton.middleware.base.bean.BaseBean;
-import com.purcotton.middleware.base.commons.CommonPage;
-import com.purcotton.middleware.base.commons.SystemErrorCode;
-import com.purcotton.middleware.base.mapper.BaseMapper;
-import com.purcotton.middleware.base.query.BaseQuery;
-import com.purcotton.middleware.base.service.BaseService;
 
 @Service
 public abstract class BaseServiceImpl<T extends BaseBean, Q extends BaseQuery> implements BaseService<T, Q>
